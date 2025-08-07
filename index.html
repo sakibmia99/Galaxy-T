@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwindcss   -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sticky top-0 bg-white">
+        <div id="header" class="w-[1200px] mx-auto flex justify-center p-[20px]">
+            <div class="">
+                <a href="index.html">
+                    <img src="img/gelaxy.png" alt="">
+                </a>
+            </div>
+            <div class="pt-6 text-[18px] font-semibold pl-14 hidden lg:block">
+                <ul class="flex gap-6">
+                    <li><a class="hover:border-b-1" href="index.html">Home</a></li>
+                    <li><a class="hover:border-b-1" href="about.html">About Us</a></li>
+
+                    <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                        class="text-black cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg inline-flex items-center text-[18px] font-semibold"
+                        type="button">Products
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </li>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover"
+                        class=" z-[1000] hidden divide-y divide-gray-100 shadow-sm w-[300px] bg-white">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="land-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Land
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="hydrographic-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Hydrographic
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="Engineering-lab.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Engineering
+                                    Lab</a>
+                            </li>
+                            <li>
+                                <a href="educational-&-research.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Educational
+                                    & Research</a>
+                            </li>
+                            <li>
+                                <a href="textile-testing.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Textile Testing</a>
+                            </li>
+                            <li>
+                                <a href="life-science-&-analytical.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Life Science & Analytical</a>
+                            </li>
+                            <li>
+                                <a href="healthcare.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] hover:text-[#4169e1]">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <li><a class="hover:border-b-1" href="services-&-cailbration.html">Services & Calibration</a></li>
+                    <li><a class="hover:border-b-1" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a></li>
+                    <li><a class="text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars pt-7 w-8"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider start -->
+    
+    <div id="default-carousel" class="relative w-full z-0" data-carousel="slide">
+         
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://picsum.photos/200/300"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://picsum.photos/200/300"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://picsum.photos/200/300"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+           
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://picsum.photos/200/300"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://picsum.photos/200/300"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+
+
+         
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Slider end  -->
+
+
+
+
+    <div class="bg-[#E9F8F9] ">
+        <div class="text-center text-5xl pt-20 font-semibold leading-[62px]">
+            <h1>Key Business Areas
+            </h1>
+        </div>
+        <div>
+            <div class="justify-center pl-13 gap-10 pt-15  flex flex-col md:flex-row">
+                <a href="land-survey.html"><img src="img/finsl.png" alt=""></a>
+                <a href="hydrographic-survey.html"><img src="img/finsl-2.png" alt=""></a>
+                <a href="Engineering-lab.html"><img src="img/finsl-3.png" alt=""></a>
+                <a href="educational-&-research.html"><img src="img/finisel-4.png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <div class=" justify-center pl-13 gap-10 pt-6 pb-30 flex flex-col md:flex-row  ">
+                <a href="textile-testing.html"><img src="img/textile.png" alt=""></a>
+                <a href="life-science-&-analytical.html"><img src="img/textile-2.png" alt=""></a>
+                <a href="healthcare.html"><img src="img/textile-3.png" alt=""></a>
+                <a href="projects.html"><img src="img/textile-4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[350px] mx-auto  md:w-[1200px]">
+        <h1 class="text-center text-[32px] leading-[42px] pt-30 font-semibold">Why we are different?
+        </h1>
+        <p class="text-center pt-6 text-[17px] leading-[32px] text-[#454f5e]">We differentiate ourselves by emphasising
+            on a business model that is
+            committed to
+            quality <br> and service with a
+            continual focus on the consumer.
+
+        </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center gap-4 pt-20 w-[1200px] mx-auto">
+        <div class="w-[350px] text-center h-[350px] md:h-[500px]">
+            <i class="fa-regular fa-heart text-[73px] "></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Better Client Service
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">Our clients are everything <br> to us and that is
+                what <br> drives us to get
+                better and <br>
+                provide the best client <br>
+                experience.
+            </p>
+        </div>
+        <div class="w-[350px] text-center h-[350px] md:h-[500px]">
+            <i class="fa-solid fa-users text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Experienced Team
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]"> Our team of highly skilled <br> engineers,
+                consultants <br> and experts work
+                closely <br>
+                with clients to provide the <br> right solutions.
+            </p>
+        </div>
+        <div class="w-[350px] text-center h-[350px] md:h-[500px]">
+            <i class="fa-solid fa-gear text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Total Solution
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">We don’t focus on selling, <br> we offer complete
+                <br> solutions that help our
+                <br> clients
+                grow & flourish.
+
+
+            </p>
+        </div>
+
+        <div class=" w-[350px] text-center h-[350px] md:h-[500px]">
+            <i class="fa-solid fa-circle-check text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Quality Standards
+
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">We practice international <br> standard quality
+                control <br> system which can
+                help us <br>
+                to provide consistency in <br> providing international <br> standard <br> products & services.
+
+
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-[#54595F]">
+        <div class="text-center p-[70px] text-white">
+            <h1 class="text-[32px] leading-[42px] font-bold">Get In Touch.</h1>
+            <p class="text-[17px] leading-[32px] pt-5">We’d love to speak to you about your requirements and share any
+                product information
+                that <br> you may need. Talk to us any time.</p>
+            <p class="font-semibold text-[20px] leading-[37px] pt-10"> + 88 01817770022</p>
+            <p class="font-semibold text-[20px] leading-[37px] pt-1.5">+ 88 01817770033</p>
+            <p class="font-bold text-[20px] leading-[37px] pt-3">info@galaxytechbd.com</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center gap-20 p-[25px] md:w-[1200px] mx-auto">
+        <div class=" pr-5">
+            <img src="img/gelaxy.png" alt="">
+            <p class="pt-8 text-[17px] leading-[32px]">Complete Solution of Science & <br> Engineering Technologies with
+                <br> Import,
+                Supply, Installation, <br> Service & Calibration of <br> the Equipment’s.
+            <div class="mt-13">
+                <a class="hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="pl-6 hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="md:mr-30">
+            <h1 class="text-[22px] font-semibold">Products</h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="land-survey.html">Land Survey </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="hydrographic-survey.html">Hydrographic Survey</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="Engineering-lab.html">Engineering lab</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="educational-&-research.html">Education & Research </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="textile-testing.html">Textile Testing</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="life-science-&-analytical.html">Life Science & Analytical</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="healthcare.html">Healthcare</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="projects.html">Projects</a></h1>
+        </div>
+        <div>
+            <h1 class="text-[22px] font-semibold">Quick Links</h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="index.html">Home</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="about.html">About
+                    Us</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="services-&-cailbration.html">Services & Calibration</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="contact-us.html">Contact Us</a></h1>
+        </div>
+        <div>
+            <h1 class="text-[22px] font-semibold">Our Location</h1>
+            <h1 class="text-[22px] font-semibold pt-7">Corporate Office</h1>
+            <p class="text-[#454f5e] leading-[32px]">64/1 (3rd floor – D1), Lake Circus,</p>
+            <p class="text-[#454f5e] leading-[32px] pt-2">Kalabagan, Dhaka -1205</p>
+        </div>
+    </div>
+    <div class="bg-[#E9F8F9]">
+        <div class="flex flex-col md:flex-row justify-between p-5 text-[14px] pr-50 md:w-[1200px] mx-auto">
+            <div class="leading-[24px]">
+                <h1>© 2025 Galaxy Trade & Technologies</h1>
+            </div>
+            <div class="leading-[24px]">
+                <h1>Developed By DzoneIT.</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

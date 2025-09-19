@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <div class="sticky top-0 bg-[#E9F8F9] z-50">
+    <div class="sticky top-0 bg-[#E9F8F9] z-50">
         <div class="max-w-[1200px] mx-auto flex justify-between items-center px-4 py-8">
             <!-- Logo -->
             <a href="index.html">
@@ -31,26 +31,33 @@
                 <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
                 <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
                 <!-- Dropdown -->
-                <div class="relative group">
-                    <button class="flex items-center hover:text-[#63B9C8]">Products
-                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 10 6">
-                            <path d="M1 1l4 4 4-4"></path>
-                        </svg>
-                    </button>
-                    <div
-                        class="absolute hidden group-hover:block bg-white shadow-md w-60 mt-2 text-black rounded-md">
-                        <ul class="py-2 text-[15px]">
-                            <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
-                            <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic Survey</a></li>
-                            <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering Lab</a></li>
-                            <li><a href="educational-&-research.html" class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
-                            <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile Testing</a></li>
-                            <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life Science & Analytical</a></li>
-                            <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
-                            <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
-                        </ul>
-                    </div>
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover" class="flex items-center hover:text-[#63B9C8]">Products<svg
+                        class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 text-black ">
+                    <ul class="py-2 text-[15px]">
+                        <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
+                        <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic
+                                Survey</a></li>
+                        <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering
+                                Lab</a></li>
+                        <li><a href="educational-&-research.html"
+                                class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
+                        <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile
+                                Testing</a></li>
+                        <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life
+                                Science & Analytical</a></li>
+                        <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
+                        <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
+                    </ul>
                 </div>
                 <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
                 <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
@@ -87,37 +94,37 @@
     </div>
 
     <!-- Slider start -->
-    
+
     <div id="default-carousel" class="relative w-full z-0" data-carousel="slide">
-         
+
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            
+
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://picsum.photos/200/300"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
-            
+
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://picsum.photos/200/300"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
-            
+
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://picsum.photos/200/300"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
-           
+
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://picsum.photos/200/300"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
-            
+
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://picsum.photos/200/300"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
-        
+
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
             <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
                 data-carousel-slide-to="0"></button>
@@ -132,7 +139,7 @@
         </div>
 
 
-         
+
         <button type="button"
             class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev>
@@ -263,7 +270,7 @@
         </div>
     </div>
 
-   <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 py-10">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 py-10">
         <div>
             <img src="img/gelaxy.png" alt="logo" class="h-12">
             <p class="mt-4 text-[16px] text-[#454f5e] leading-relaxed">
@@ -274,8 +281,8 @@
                 <a class="hover:text-[#3AA6B9]" target="_blank"
                     href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a class="hover:text-[#3AA6B9]" target="_blank"
-                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="hover:text-[#3AA6B9]" target="_blank" href="https://www.linkedin.com/company/galaxytechbd/"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
         <div>
@@ -286,7 +293,8 @@
                 <li><a href="Engineering-lab.html" class="hover:text-[#3AA6B9]">Engineering Lab</a></li>
                 <li><a href="educational-&-research.html" class="hover:text-[#3AA6B9]">Education & Research</a></li>
                 <li><a href="textile-testing.html" class="hover:text-[#3AA6B9]">Textile Testing</a></li>
-                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a></li>
+                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a>
+                </li>
                 <li><a href="healthcare.html" class="hover:text-[#3AA6B9]">Healthcare</a></li>
                 <li><a href="projects.html" class="hover:text-[#3AA6B9]">Projects</a></li>
             </ul>

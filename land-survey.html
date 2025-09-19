@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
-        <link rel="shortcut icon" href="./img/gelaxy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/gelaxy.png" type="image/x-icon">
 </head>
 
 <body>
 
-     <div class="sticky top-0 bg-[#E9F8F9] z-50">
+    <div class="sticky top-0 bg-[#E9F8F9] z-50">
         <div class="max-w-[1200px] mx-auto flex justify-between items-center px-4 py-8">
             <!-- Logo -->
             <a href="index.html">
@@ -32,26 +32,33 @@
                 <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
                 <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
                 <!-- Dropdown -->
-                <div class="relative group">
-                    <button class="flex items-center hover:text-[#63B9C8]">Products
-                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 10 6">
-                            <path d="M1 1l4 4 4-4"></path>
-                        </svg>
-                    </button>
-                    <div
-                        class="absolute hidden group-hover:block bg-white shadow-md w-60 mt-2 text-black rounded-md">
-                        <ul class="py-2 text-[15px]">
-                            <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
-                            <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic Survey</a></li>
-                            <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering Lab</a></li>
-                            <li><a href="educational-&-research.html" class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
-                            <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile Testing</a></li>
-                            <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life Science & Analytical</a></li>
-                            <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
-                            <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
-                        </ul>
-                    </div>
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover" class="flex items-center hover:text-[#63B9C8]">Products<svg
+                        class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 text-black ">
+                    <ul class="py-2 text-[15px]">
+                        <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
+                        <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic
+                                Survey</a></li>
+                        <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering
+                                Lab</a></li>
+                        <li><a href="educational-&-research.html"
+                                class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
+                        <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile
+                                Testing</a></li>
+                        <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life
+                                Science & Analytical</a></li>
+                        <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
+                        <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
+                    </ul>
                 </div>
                 <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
                 <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
@@ -89,26 +96,27 @@
 
 
 
-     
-<div class="bg-cover bg-center bg-no-repeat" style="background-image: url('img/Land-Survey-2.jpg');">
-    <div class="text-center text-white px-4 sm:px-6 md:px-12 lg:px-0 py-16 md:py-32 max-w-[1200px] mx-auto">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] leading-snug md:leading-[72px] font-bold">
-            Land Surveying Instruments
-        </h1>
-        <div class="pt-5 space-y-2 text-base sm:text-lg md:text-[17px] leading-relaxed md:leading-[32px]">
-            <p>We provide complete solutions on land surveying instruments which cover a wide range of</p>
-            <p>applications such as construction and geodetic surveys or layout planning with advanced</p>
-            <p>solutions to make surveying & engineering more productive.</p>
+
+    <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('img/Land-Survey-2.jpg');">
+        <div class="text-center text-white px-4 sm:px-6 md:px-12 lg:px-0 py-16 md:py-32 max-w-[1200px] mx-auto">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] leading-snug md:leading-[72px] font-bold">
+                Land Surveying Instruments
+            </h1>
+            <div class="pt-5 space-y-2 text-base sm:text-lg md:text-[17px] leading-relaxed md:leading-[32px]">
+                <p>We provide complete solutions on land surveying instruments which cover a wide range of</p>
+                <p>applications such as construction and geodetic surveys or layout planning with advanced</p>
+                <p>solutions to make surveying & engineering more productive.</p>
+            </div>
         </div>
     </div>
-</div>
 
- 
-<div class="w-full py-10 px-4 sm:px-6 md:px-12 md:sticky top-17 md:top-16">
-    <div class="bg-[#6EC1E4] text-white font-bold text-center rounded-3xl shadow-lg max-w-[1200px] mx-auto px-4 py-4 md:py-12 text-lg md:text-3xl leading-tight md:leading-[62px]">
-        We are Authorized Dealer of CHCNAV
+
+    <div class="w-full py-10 px-4 sm:px-6 md:px-12 md:sticky top-17 md:top-16">
+        <div
+            class="bg-[#6EC1E4] text-white font-bold text-center rounded-3xl shadow-lg max-w-[1200px] mx-auto px-4 py-4 md:py-12 text-lg md:text-3xl leading-tight md:leading-[62px]">
+            We are Authorized Dealer of CHCNAV
+        </div>
     </div>
-</div>
 
     <div class="text-[24px] leading-[29px] font-semibold text-center w-full max-w-[1200px] mx-auto pt-11">
         <h1>CHCNAV - RTK GNSS SYSTEM</h1>
@@ -116,118 +124,132 @@
 
     <!-- CHCNAV - RTK GNSS SYSTEM-1 -->
 
-     <div class="grid grid-cols-1 md:grid-cols-4 justify-center w-full max-w-[1200px] mx-auto gap-6 pt-8 px-4">
-    <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
-        <a href=""><img src="img/prodect-img.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i93 VISUAL IMU-RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+    <div class="grid grid-cols-1 md:grid-cols-4 justify-center w-full max-w-[1200px] mx-auto gap-6 pt-8 px-4">
+        <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
+            <a href=""><img src="img/prodect-img.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i93 VISUAL IMU-RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-1.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i89 POCKET SIZE VISUAL IMU – RTK</a>
+            </h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-2.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i83 PRO IMU – RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-3.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">iBASE GNSS</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
     </div>
-    <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-1.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i89 POCKET SIZE VISUAL IMU – RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-    <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-2.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i83 PRO IMU – RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-    <div class="w-full text-center md:text-left bg-white rounded-lg shadow-md p-4">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-3.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] mt-2">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">iBASE GNSS</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-</div>
 
     <!-- CHCNAV - RTK GNSS SYSTEM-2 -->
 
-     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center w-full max-w-[1200px] mx-auto gap-6 pt-8 px-4">
-    <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-4.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">HEC600 – Controller</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+    <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center w-full max-w-[1200px] mx-auto gap-6 pt-8 px-4">
+        <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-4.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">HEC600 – Controller</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-5.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">LandStar 8 Field Software</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-6.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CGO2 Post Processing Software</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
+        </div>
+        <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-7.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i76 PLAM SIZED VISUAL IMU RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
     </div>
-    <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-5.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">LandStar 8 Field Software</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-    <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-6.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CGO2 Post Processing Software</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-    <div class="w-full bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-7.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i76 PLAM SIZED VISUAL IMU RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
-</div>
 
     <!-- CHCNAV - RTK GNSS SYSTEM-3 -->
 
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-8 px-4">
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-8.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">DL8 35W External Radio</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-8.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">DL8 35W External Radio</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
-    </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-9.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">LT800H Handheld CM Level RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-9.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">LT800H Handheld CM Level RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
-    </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-10.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i83 IMU RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-10.png" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">i83 IMU RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
-    </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-11.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">I73+ IMU RTK</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+            <a href=""><img src="img/CHCNAV - RTK GNSS SYSTEM-11.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - RTK GNSS SYSTEM</p>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">I73+ IMU RTK</a></h1>
+            <div
+                class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            </div>
         </div>
     </div>
-</div>
     <!-- CHCNAV - Mobile Mapping Systems -->
 
     <div class="pt-25">
@@ -236,42 +258,49 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-7 px-4">
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/Mobile Mapping Systems-1.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Alpha 3D Advance Laser Scanner, HDR Camera, GNSS, Inertial Tech</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/Mobile Mapping Systems-1.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Alpha 3D Advance Laser Scanner, HDR
+                        Camera, GNSS, Inertial Tech</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/Mobile Mapping Systems-2.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">RS10 Handheld 3D Scanner</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/Mobile Mapping Systems-2.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">RS10 Handheld 3D Scanner</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/Mobile Mapping Systems-3.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">BB4 Professional Survey Drone</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/Mobile Mapping Systems-3.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">BB4 Professional Survey Drone</a>
+                </h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/Mobile Mapping Systems-4.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CoProcess LiDAR Data Processing Software</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/Mobile Mapping Systems-4.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHCNAV - Mobile Mapping Systems</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CoProcess LiDAR Data Processing
+                        Software</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </div>
 
     <!-- TOTAL STATION -->
@@ -284,111 +313,121 @@
             <h1>TOTAL STATION</h1>
         </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-7 px-4">
-    <!-- Card 1 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-1.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CHCNAV CTS – 112R4</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-7 px-4">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-1.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CHCNAV CTS – 112R4</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-2.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA KTS – 442R10U</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-2.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA KTS – 442R10U</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 3 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-3.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA KTS – 442UT</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-3.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA KTS – 442UT</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 4 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-4.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA iM-50 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-4.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA iM-50 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
-    <!-- Card 5 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-5.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA iM-100 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-5.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA iM-100 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 6 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-6.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA FX-200 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-6.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA FX-200 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 7 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-7.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON GM-50 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+            <!-- Card 7 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-7.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON GM-50 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 8 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-8.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON GM-100 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <!-- Card 8 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-8.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON GM-100 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
-    <!-- Card 9 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-9.png" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON OS-200 Series</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-        </div>
-    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
+            <!-- Card 9 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-9.png" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON OS-200 Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
 
-    <!-- Card 10 -->
-    <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-        <a href=""><img src="img/TOTAL STATION-10.jpg" alt="" class="w-full h-auto rounded-lg"></a>
-        <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
-        <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CHCNAV CTS-A100</a></h1>
-        <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-            <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <!-- Card 10 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img src="img/TOTAL STATION-10.jpg" alt="" class="w-full h-auto rounded-lg"></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">TOTAL STATION</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">CHCNAV CTS-A100</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     </div>
 
 
@@ -398,83 +437,105 @@
 
 
     <div class="pt-28">
-    <!-- Section Title -->
-    <div class="text-[24px] leading-[29px] font-semibold text-center w-full max-w-[1200px] mx-auto pt-11">
-        <h1>LEVEL MACHINE</h1>
-    </div>
+        <!-- Section Title -->
+        <div class="text-[24px] leading-[29px] font-semibold text-center w-full max-w-[1200px] mx-auto pt-11">
+            <h1>LEVEL MACHINE</h1>
+        </div>
 
-    <!-- First Row -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-7 px-4">
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-1.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA AUTO LEVEL B20 / B30A / B40A</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <!-- First Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-7 px-4">
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-1.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA AUTO LEVEL B20 / B30A /
+                        B40A</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-2.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON DIGITAL LEVEL DL-502 /
+                        DL-503</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-3.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON DIGITAL LEVEL DL-501</a>
+                </h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-4.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON AUTO LEVEL AT-B2 / AT-B3A /
+                        AT-B4A</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
             </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-2.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON DIGITAL LEVEL DL-502 / DL-503</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-3.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON DIGITAL LEVEL DL-501</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-4.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">TOPCON AUTO LEVEL AT-B2 / AT-B3A / AT-B4A</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Second Row -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-5.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA DIGITAL LEVEL KL-15 / KL-07</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+        <!-- Second Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-12 px-4">
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-5.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA DIGITAL LEVEL KL-15 /
+                        KL-07</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
             </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-6.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA DIGITAL LEVEL KL-03</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-6.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA DIGITAL LEVEL KL-03</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
             </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-7.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA AUTO LEVEL KL & DSZ Series</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-7.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">KOLIDA AUTO LEVEL KL & DSZ
+                        Series</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
             </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-8.png" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA DIGITAL LEVEL SDL1X</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/LEVEL MACHINE-8.png"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">LEVEL MACHINE</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">SOKKIA DIGITAL LEVEL SDL1X</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
@@ -482,135 +543,154 @@
     <!-- Accessories -->
 
 
-   <div class="pt-24">
-    <!-- Section Title -->
-    <div class="text-[24px] leading-[29px] font-semibold text-center w-full max-w-[1200px] mx-auto pt-11">
-        <h1>Accessories</h1>
+    <div class="pt-24">
+        <!-- Section Title -->
+        <div class="text-[24px] leading-[29px] font-semibold text-center w-full max-w-[1200px] mx-auto pt-11">
+            <h1>Accessories</h1>
+        </div>
+
+        <!-- Accessories Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-10 px-4">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-1.webp"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Single Prism</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-2.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Measuring Wheels</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-3.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Tripod</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-4.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Levelling Staff</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-5.webp"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Mini Prism Set</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-6.jpeg"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Mini Prism Set</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-7.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Prism Pole</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-8.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Carbon Fiber Pole</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-9.jpg" alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Bipod for RTK Pole</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-10.jpg"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Prism Pole Holder</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-11.jpg"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Tribrach & Adapter With Optical
+                        Plummet</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
+                <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-12.jpg"
+                        alt=""></a>
+                <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
+                <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Battery & Charger</a></h1>
+                <div
+                    class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
+                    <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Accessories Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto pt-10 px-4">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-1.webp" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Single Prism</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-2.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Measuring Wheels</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-3.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Tripod</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-4.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Levelling Staff</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-5.webp" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Mini Prism Set</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-6.jpeg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Mini Prism Set</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-7.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Prism Pole</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-8.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Carbon Fiber Pole</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-9.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Bipod for RTK Pole</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 10 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-10.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Prism Pole Holder</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 11 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-11.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Tribrach & Adapter With Optical Plummet</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-
-        <!-- Card 12 -->
-        <div class="bg-white rounded-lg shadow-md p-4 text-center md:text-left">
-            <a href=""><img class="w-full h-[250px] object-cover rounded-lg" src="img/Accessories-12.jpg" alt=""></a>
-            <p class="text-[14px] leading-[18px] text-[#454f5e] pt-3">Accessories</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">Battery & Charger</a></h1>
-            <div class="w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg flex items-center justify-center mt-4 mx-auto md:mx-0">
-                <a href=""><button class="text-[17px] font-sans">READ MORE</button></a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -625,8 +705,8 @@
                 <a class="hover:text-[#3AA6B9]" target="_blank"
                     href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a class="hover:text-[#3AA6B9]" target="_blank"
-                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="hover:text-[#3AA6B9]" target="_blank" href="https://www.linkedin.com/company/galaxytechbd/"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
         <div>
@@ -637,7 +717,8 @@
                 <li><a href="Engineering-lab.html" class="hover:text-[#3AA6B9]">Engineering Lab</a></li>
                 <li><a href="educational-&-research.html" class="hover:text-[#3AA6B9]">Education & Research</a></li>
                 <li><a href="textile-testing.html" class="hover:text-[#3AA6B9]">Textile Testing</a></li>
-                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a></li>
+                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a>
+                </li>
                 <li><a href="healthcare.html" class="hover:text-[#3AA6B9]">Healthcare</a></li>
                 <li><a href="projects.html" class="hover:text-[#3AA6B9]">Projects</a></li>
             </ul>
@@ -657,14 +738,14 @@
             <p class="text-[#454f5e] leading-relaxed">64/1 (3rd floor – D1), Lake Circus,<br>Kalabagan, Dhaka -1205</p>
         </div>
     </div>
-     <div class="bg-[#E9F8F9]">
+    <div class="bg-[#E9F8F9]">
         <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4 text-sm">
             <h1>© 2025 Galaxy Trade & Technologies</h1>
             <h1>Developed By DzoneIT.</h1>
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

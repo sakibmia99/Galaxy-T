@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwindcss   -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./img/gelaxy.png" type="image/x-icon">
+</head>
+
+<body class="overflow-x-hidden">
+
+
+    <!--HEADER-->
+     <div class="sticky top-0 bg-[#E9F8F9] z-50">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center px-4 py-8">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/gelaxy.png" alt="logo" class="h-10 md:h-20">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-6 text-[16px] font-semibold">
+                <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
+                <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
+                <!-- Dropdown -->
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover" class="flex items-center hover:text-[#63B9C8]">Products<svg
+                        class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownDelay"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 text-black ">
+                    <ul class="py-2 text-[15px]">
+                        <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
+                        <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic
+                                Survey</a></li>
+                        <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering
+                                Lab</a></li>
+                        <li><a href="educational-&-research.html"
+                                class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
+                        <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile
+                                Testing</a></li>
+                        <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life
+                                Science & Analytical</a></li>
+                        <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
+                        <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
+                    </ul>
+                </div>
+                <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
+                <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
+                <a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
+                <a target="_blank" class="text-[#63B9C8]"
+                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <!-- Mobile Menu (checkbox + peer) -->
+            <div class="lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+                <label for="menu-toggle" class="cursor-pointer text-2xl"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Items -->
+        <div
+            class="hidden peer-checked:flex flex-col space-y-3 px-4 pb-4 bg-[#E9F8F9] text-[16px] font-semibold lg:hidden">
+            <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
+            <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
+            <a href="land-survey.html" class="hover:text-[#63B9C8]">Land Survey</a>
+            <a href="hydrographic-survey.html" class="hover:text-[#63B9C8]">Hydrographic Survey</a>
+            <a href="Engineering-lab.html" class="hover:text-[#63B9C8]">Engineering Lab</a>
+            <a href="educational-&-research.html" class="hover:text-[#63B9C8]">Educational & Research</a>
+            <a href="textile-testing.html" class="hover:text-[#63B9C8]">Textile Testing</a>
+            <a href="life-science-&-analytical.html" class="hover:text-[#63B9C8]">Life Science & Analytical</a>
+            <a href="healthcare.html" class="hover:text-[#63B9C8]">Healthcare</a>
+            <a href="projects.html" class="hover:text-[#63B9C8]">Projects</a>
+            <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
+            <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
+        </div>
+    </div>
+
+
+    
+
+    <!-- HERO -->
+    <div class="bg-blend-overlay bg-[#0F172A] text-white text-center px-4 py-16"
+        style="background-image: url(img/contact\ us\ bg.jpg); background-repeat:no-repeat; background-size:cover; background-position:center;">
+        <h1 class="text-2xl md:text-4xl font-bold">Contact Us</h1>
+        <p class="mt-4 text-[16px] md:text-[18px] leading-relaxed">We’d love to speak to you about your requirements and <br class="hidden md:block"> share our product information. Talk to us any time.</p>
+        <div class="mt-6 space-y-2 text-lg font-semibold">
+            <h1>+880 1817-770022</h1>
+            <h1>+880 1817-770033</h1>
+            <h1>info@galaxytechbd.com</h1>
+        </div>
+    </div>
+
+    <!--   CONTACT FORM   -->
+    <div class="text-center px-4 mt-10">
+        <h1 class="text-xl md:text-2xl font-bold text-[#54595f]">or leave us your information and query,</h1>
+        <h1 class="text-xl md:text-2xl font-bold text-[#54595f]">we will get back to you.</h1>
+    </div>
+
+    <form action="" class="max-w-[800px] mx-auto px-4 mt-8 space-y-5">
+        <div>
+            <label class="block text-[18px] text-[#454f5e] mb-1">Name</label>
+            <input placeholder="Name" class="w-full border rounded-md h-12 px-3" type="text">
+        </div>
+        <div>
+            <label class="block text-[18px] text-[#454f5e] mb-1">Email</label>
+            <input placeholder="Email" class="w-full border rounded-md h-12 px-3" type="email">
+        </div>
+        <div>
+            <label class="block text-[18px] text-[#454f5e] mb-1">Company</label>
+            <input placeholder="Company" class="w-full border rounded-md h-12 px-3" type="text">
+        </div>
+        <div>
+            <label class="block text-[18px] text-[#454f5e] mb-1">Message</label>
+            <textarea placeholder="Message" class="w-full border rounded-md h-24 px-3 py-2"></textarea>
+        </div>
+        <button
+            class="w-full md:w-[152px] h-[45px] bg-[#6EC1E4] rounded-md text-[18px] uppercase text-white">Send</button>
+    </form>
+
+    <!--   OFFICE ADDRESSES   -->
+    <div class="bg-[#E9F8F9] mt-12">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
+            <div>
+                <h1><span class="text-lg font-bold">Alook Towers</span> <span>(4th Floor)</span></h1>
+                <p class="text-[#454f5e] mt-2">
+                    47/1,Shahid Tajuddin Ahmed Sarani<br>Mohakhali.Dhaka-1212,Bangladesh</p>
+                <img src="./img/Screenshot_79.png" alt="" class="mt-4 w-full">
+            </div>
+            <div>
+                <h1 class="text-lg font-bold">Chittagong Office</h1>
+                <p class="text-[#454f5e] mt-2">House: 83/B, Road: 2/1,Sugandha R/A,<br>Muradpur, Chittagong.</p>
+                <img src="./img/Screenshot_80.png" alt="" class="mt-4 w-full">
+            </div>
+            <div>
+                <h1 class="text-lg font-bold">Rajshahi Office</h1>
+                <p class="text-[#454f5e] mt-2">55/5 Choke Para,Meharchondi,<br>Boyalia,Rajshahi.</p>
+                <img src="./img/Screenshot_82.png" alt="" class="mt-4 w-full">
+            </div>
+            <div>
+                <h1 class="text-lg font-bold">Registered Office</h1>
+                <p class="text-[#454f5e] mt-2">309/1 (1st floor), East Nakhalpara,<br>Tejgaon, Dhaka – 1215</p>
+                <img src="./img/Screenshot_83.png" alt="" class="mt-4 w-full">
+            </div>
+        </div>
+    </div>
+
+    <!--   FOOTER  -->
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 py-10">
+        <div>
+            <img src="img/gelaxy.png" alt="logo" class="h-12">
+            <p class="mt-4 text-[16px] text-[#454f5e] leading-relaxed">
+                Complete Solution of Science & Engineering Technologies with Import,
+                Supply, Installation, Service & Calibration of the Equipment’s.
+            </p>
+            <div class="mt-4 flex space-x-4">
+                <a class="hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Products</h1>
+            <ul class="mt-4 space-y-2 text-[#454f5e]">
+                <li><a href="land-survey.html" class="hover:text-[#3AA6B9]">Land Survey</a></li>
+                <li><a href="hydrographic-survey.html" class="hover:text-[#3AA6B9]">Hydrographic Survey</a></li>
+                <li><a href="Engineering-lab.html" class="hover:text-[#3AA6B9]">Engineering Lab</a></li>
+                <li><a href="educational-&-research.html" class="hover:text-[#3AA6B9]">Education & Research</a></li>
+                <li><a href="textile-testing.html" class="hover:text-[#3AA6B9]">Textile Testing</a></li>
+                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a></li>
+                <li><a href="healthcare.html" class="hover:text-[#3AA6B9]">Healthcare</a></li>
+                <li><a href="projects.html" class="hover:text-[#3AA6B9]">Projects</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Quick Links</h1>
+            <ul class="mt-4 space-y-2 text-[#454f5e]">
+                <li><a href="index.html" class="hover:text-[#3AA6B9]">Home</a></li>
+                <li><a href="about.html" class="hover:text-[#3AA6B9]">About Us</a></li>
+                <li><a href="services-&-cailbration.html" class="hover:text-[#3AA6B9]">Services & Calibration</a></li>
+                <li><a href="contact-us.html" class="hover:text-[#3AA6B9]">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Our Location</h1>
+            <h1 class="text-md font-semibold mt-4">Corporate Office</h1>
+            <p class="text-[#454f5e] leading-relaxed">64/1 (3rd floor – D1), Lake Circus,<br>Kalabagan, Dhaka -1205</p>
+        </div>
+    </div>
+
+    <div class="bg-[#E9F8F9]">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4 text-sm">
+            <h1>© 2025 Galaxy Trade & Technologies</h1>
+            <h1>Developed By DzoneIT.</h1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>

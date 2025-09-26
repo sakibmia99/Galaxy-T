@@ -19,84 +19,95 @@
 </head>
 
 <body>
-    <div class="sticky top-0 bg-[#E9F8F9] z-50">
-        <div class="max-w-[1200px] mx-auto flex justify-between items-center px-4 py-8">
+    <!--HEADER-->
+    <nav class="bg-[#E9F8F9] sticky top-0">
+        <div class="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-8">
             <!-- Logo -->
             <a href="index.html">
                 <img src="img/gelaxy.png" alt="logo" class="h-10 md:h-20">
             </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
 
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-6 text-[16px] font-semibold">
-                <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
-                <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
-                <!-- Dropdown -->
-                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
-                    data-dropdown-trigger="hover" class="flex items-center hover:text-[#63B9C8]">Products<svg
-                        class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 4 4 4-4" />
-                    </svg>
-                </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-6 md:flex-row md:mt-0 text-black">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-black rounded-sm md:bg-transparent  md:p-0 hover:text-[#63B9C8]"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:text-[#63B9C8] md:hover:bg-transparent md:border-0  md:p-0 ">About
+                            Us</a>
+                    </li>
+                    <li class="relative">
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0 md:w-auto cursor-pointer">Products
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-50 md:w-60">
+                            <ul class="py-2 text-[15px]" aria-labelledby="dropdownLargeButton">
+                                <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#63B9C8]">Land
+                                        Survey</a></li>
+                                <li><a href="hydrographic-survey.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Hydrographic
+                                        Survey</a></li>
+                                <li><a href="Engineering-lab.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Engineering
+                                        Lab</a></li>
+                                <li><a href="educational-&-research.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Educational & Research</a></li>
+                                <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#63B9C8]">Textile
+                                        Testing</a></li>
+                                <li><a href="life-science-&-analytical.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Life
+                                        Science & Analytical</a></li>
+                                <li><a href="healthcare.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Healthcare</a></li>
+                                <li><a href="projects.html" class="block px-4 py-2 hover:text-[#63B9C8]">Projects</a>
+                                </li>
+                            </ul>
 
-                <!-- Dropdown menu -->
-                <div id="dropdownDelay"
-                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-60 text-black ">
-                    <ul class="py-2 text-[15px]">
-                        <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Land Survey</a></li>
-                        <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#4169e1]">Hydrographic
-                                Survey</a></li>
-                        <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#4169e1]">Engineering
-                                Lab</a></li>
-                        <li><a href="educational-&-research.html"
-                                class="block px-4 py-2 hover:text-[#4169e1]">Educational & Research</a></li>
-                        <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#4169e1]">Textile
-                                Testing</a></li>
-                        <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#4169e1]">Life
-                                Science & Analytical</a></li>
-                        <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#4169e1]">Healthcare</a></li>
-                        <li><a href="projects.html" class="block px-4 py-2 hover:text-[#4169e1]">Projects</a></li>
-                    </ul>
-                </div>
-                <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
-                <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
-                <a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
-                <a target="_blank" class="text-[#63B9C8]"
-                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+                        </div>
+                    </li>
 
-            <!-- Mobile Menu (checkbox + peer) -->
-            <div class="lg:hidden">
-                <input type="checkbox" id="menu-toggle" class="hidden peer">
-                <label for="menu-toggle" class="cursor-pointer text-2xl"><i class="fa-solid fa-bars"></i></label>
+                    <li>
+                        <a href="services-&-cailbration.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Services
+                            & Calibration</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Contact</a>
+                    </li>
+                    <li>
+                        <a class="mx-2 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
+                        <a target="_blank" class="mx-2 text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a class="text-[#63B9C8] mx-2" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <!-- Mobile Menu Items -->
-        <div
-            class="hidden peer-checked:flex flex-col space-y-3 px-4 pb-4 bg-[#E9F8F9] text-[16px] font-semibold lg:hidden">
-            <a href="index.html" class="hover:text-[#63B9C8]">Home</a>
-            <a href="about.html" class="hover:text-[#63B9C8]">About Us</a>
-            <a href="land-survey.html" class="hover:text-[#63B9C8]">Land Survey</a>
-            <a href="hydrographic-survey.html" class="hover:text-[#63B9C8]">Hydrographic Survey</a>
-            <a href="Engineering-lab.html" class="hover:text-[#63B9C8]">Engineering Lab</a>
-            <a href="educational-&-research.html" class="hover:text-[#63B9C8]">Educational & Research</a>
-            <a href="textile-testing.html" class="hover:text-[#63B9C8]">Textile Testing</a>
-            <a href="life-science-&-analytical.html" class="hover:text-[#63B9C8]">Life Science & Analytical</a>
-            <a href="healthcare.html" class="hover:text-[#63B9C8]">Healthcare</a>
-            <a href="projects.html" class="hover:text-[#63B9C8]">Projects</a>
-            <a href="services-&-cailbration.html" class="hover:text-[#63B9C8]">Services & Calibration</a>
-            <a href="contact-us.html" class="hover:text-[#63B9C8]">Contact Us</a>
-        </div>
-    </div>
+    </nav>
 
     <!-- Slider start -->
-
-    <div id="default-carousel" class="relative w-full z-0" data-carousel="slide">
-
+    <div id="default-carousel" class="relative w-full -z-10" data-carousel="slide">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
 
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -167,11 +178,7 @@
             </span>
         </button>
     </div>
-
     <!-- Slider end  -->
-
-
-
 
     <div class="bg-[#E9F8F9] ">
         <div class="text-center text-5xl pt-20 font-semibold leading-[62px]">

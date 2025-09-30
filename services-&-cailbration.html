@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service and Cailbration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <!-- tailwindcss   -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./img/gelaxy.png" type="image/x-icon">
+  <style>
+    /* Override slick default arrows with Tailwind look */
+    .slick-prev,
+    .slick-next {
+      background: none !important;
+      border: none !important;
+      color: black !important;
+      font-size: 28px !important;
+      line-height: 1 !important;
+      opacity: 1 !important;
+      /* always visible */
+      z-index: 10;
+    }
+
+    .slick-prev {
+      left: -30px !important;
+    }
+
+    .slick-next {
+      right: -30px !important;
+    }
+  </style>
+
+</head>
+
+<body class="font-sans">
+  <!-- Navbar -->
+  <nav class="bg-[#E9F8F9] sticky top-0 font-[Montserrat] z-50">
+    <div class="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-5">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="img/gelaxy.png" alt="logo" class="w-35 md:h-20">
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-semibold text-lg p-4 md:p-0 mt-4 md:space-x-6 md:flex-row md:mt-0 text-black">
+          <li>
+            <a href="index.html"
+              class="block py-2 px-3 text-black rounded-sm md:bg-transparent  md:p-0 hover:text-[#63B9C8]"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:text-[#63B9C8] md:hover:bg-transparent md:border-0  md:p-0 ">About
+              Us</a>
+          </li>
+          <li class="relative">
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0 md:w-auto cursor-pointer">Products
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-50 md:w-60">
+              <ul class="py-2" aria-labelledby="dropdownLargeButton">
+                <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#63B9C8] ">Land
+                    Survey</a></li>
+                <li><a href="hydrographic-survey.html" class="block px-4 py-2 hover:text-[#63B9C8]">Hydrographic
+                    Survey</a></li>
+                <li><a href="Engineering-lab.html" class="block px-4 py-2 hover:text-[#63B9C8]">Engineering
+                    Lab</a></li>
+                <li><a href="educational-&-research.html" class="block px-4 py-2 hover:text-[#63B9C8]">Educational &
+                    Research</a></li>
+                <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#63B9C8]">Textile
+                    Testing</a></li>
+                <li><a href="life-science-&-analytical.html" class="block px-4 py-2 hover:text-[#63B9C8]">Life
+                    Science & Analytical</a></li>
+                <li><a href="healthcare.html" class="block px-4 py-2 hover:text-[#63B9C8]">Healthcare</a></li>
+                <li><a href="projects.html" class="block px-4 py-2 hover:text-[#63B9C8]">Projects</a>
+                </li>
+                <li><a href="prodect-details.html" class="block px-4 py-2 hover:text-[#63B9C8]">Details
+                    Page</a>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+
+          <li>
+            <a href="services-&-cailbration.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Services
+              & Calibration</a>
+          </li>
+          <li>
+            <a href="contact-us.html"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Contact</a>
+          </li>
+          <li>
+            <a class="mx-2 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
+            <a target="_blank" class="mx-2 text-[#63B9C8]"
+              href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a class="text-[#63B9C8] mx-2" href=""><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div
+    class="max-w-[1200px] w-full mx-auto flex flex-col-reverse md:flex-row gap-6 py-10 px-4 items-center justify-between z-9">
+    <div class="text-center md:text-left">
+      <h1 class="text-[22px] md:text-[32px] font-medium">Manufacturer Authorized</h1>
+      <h1 class="text-[28px] md:text-[36px] font-medium">Service Center</h1>
+      <p class="text-[16px] md:text-[20px] text-[#454f5e]">for Surveying Instruments</p>
+      <h1 class="text-[22px] md:text-[32px] font-medium pt-3">Service & Calibration</h1>
+
+
+      <div class="slickSlider max-w-[650px] mx-auto pt-6">
+        <div>
+          <img src="img/Capture.jpg" class="w-[120px] mx-auto p-2 object-cover rounded-lg bg-white" alt="">
+        </div>
+        <div>
+          <img src="img/sokkia-digital-level-sdl30-sdl50.jpg"
+            class="w-[120px] mx-auto p-2 object-cover rounded-lg bg-white" alt="">
+        </div>
+        <div>
+          <img src="img/4881_37728_p1.png" class="w-[120px] mx-auto p-2 object-cover rounded-lg bg-white" alt="">
+        </div>
+        <div>
+          <img src="img/f3cc461afe90065fb17a54ef1fe6e72a95ca8bef.jpeg"
+            class="w-[120px] mx-auto p-2 object-cover rounded-lg bg-white" alt="">
+        </div>
+        <div>
+          <img src="img/giant_252813.jpg" class="w-[120px] mx-auto p-2 object-cover rounded-lg bg-white" alt="">
+        </div>
+      </div>
+
+
+    </div>
+    <div>
+      <img class="w-[250px] md:w-[500px] h-auto rounded-lg" src="img/optical.jpg" alt="">
+      <h1 class="text-center text-[18px] md:text-[20px] text-[#454f5e] font-semibold mt-3">Optical Collimator Systems
+      </h1>
+    </div>
+  </div>
+
+  <!-- Quality Section -->
+  <div class="max-w-[1200px] w-full mx-auto text-center px-4">
+    <h1 class="text-[22px] md:text-[48px] font-bold text-[#54595f]">Quality. Reliability. Responsiveness.</h1>
+    <p class="text-[16px] md:text-[20px] pt-4 text-[#454f5e]">We offer a comprehensive range of Service & Calibration
+      for your instruments<br>and the people who operate them over the total lifecycle of the equipment.</p>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-10">
+    <!-- Card 1 -->
+    <div class="bg-[#49B6C9] rounded-xl text-white text-center shadow-xl p-6">
+      <img class="w-[120px] h-[120px] rounded-full mx-auto" src="img/New-Project1.jpg" alt="">
+      <h1 class="text-[24px] md:text-[28px] font-semibold pt-4">Servicing Options For</h1>
+      <div class="text-[16px] leading-[28px] pt-4">
+        <p>Automatic Level</p>
+        <p>Digital Level</p>
+        <p>Digital Theodolite</p>
+        <p>Total Stations</p>
+        <p>GNSS/RTK System</p>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-[#49B6C9] rounded-xl text-white text-center shadow-xl p-6">
+      <img class="w-[120px] h-[120px] rounded-full mx-auto" src="img/new.jpg" alt="">
+      <h1 class="text-[24px] md:text-[28px] font-semibold pt-4">Available Service</h1>
+      <div class="text-[16px] leading-[28px] pt-4">
+        <p>Operational Tests</p>
+        <p>Collimation Checks</p>
+        <p>Calibration & Adjustments</p>
+        <p>Preventive Maintenance</p>
+        <p>Overhaul Servicing</p>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="bg-[#49B6C9] rounded-xl text-white text-center shadow-xl p-6">
+      <img class="w-[120px] h-[120px] rounded-full mx-auto" src="img/new-2.jpg" alt="">
+      <h1 class="text-[24px] md:text-[28px] font-semibold pt-4">Advanced Technology</h1>
+      <div class="text-[16px] leading-[28px] pt-4">
+        <p>Collimation System</p>
+        <p>Universal Centering Device</p>
+        <p>Digital Multimeter</p>
+        <p>Frequency Counter</p>
+        <p>Digital Voltmeter</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="bg-[#E9F8F9] py-12 px-4">
+    <div class="max-w-[1200px] w-full mx-auto flex flex-col md:flex-row gap-8 items-center">
+      <img class="w-[50%] md:w-[50%] rounded-lg" src="img/Untitledpng.png" alt="">
+      <div class="flex flex-col gap-6 w-full md:w-[50%]">
+        <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+          <h1 class="text-[22px] md:text-[26px] font-bold text-[#2997aa]">GENUINE SPARE PARTS</h1>
+          <p class="text-[#454f5e] pt-3">Genuine spares to prolong machine life and maximize performance.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+          <h1 class="text-[22px] md:text-[26px] font-bold text-[#2997aa]">CALIBRATION</h1>
+          <p class="text-[#454f5e] pt-3">Bring accuracy & precision to your instrument for correct results and data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-[#E9F8F9] py-12 px-4">
+    <div class="max-w-[1200px] w-full mx-auto flex flex-col md:flex-row gap-8 items-center">
+      <div class="flex flex-col gap-6  md:w-[50%]">
+        <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+          <h1 class="text-[22px] md:text-[26px] font-bold text-[#2997aa]">AMC/CMC</h1>
+          <p class="text-[#454f5e] pt-3">Service and repair options through Comprehensive or Annual Contracts.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-xl p-6 text-center">
+          <h1 class="text-[22px] md:text-[26px] font-bold text-[#2997aa]">TRAINING</h1>
+          <p class="text-[#454f5e] pt-3">On-site & off-site training for safe operation, maintenance & installation.</p>
+        </div>
+      </div>
+      <img class="w-[200px] md:h-[350px] md:w-[50%] rounded-lg" src="img/un.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Contact CTA -->
+  <div class="text-center bg-[#54595F] text-white py-12 px-4">
+    <h1 class="text-[22px] md:text-[32px] font-bold">Contact us for Online Verification of Calibration Certificate or
+      any Service Inquiry</h1>
+    <div class="text-[16px] md:text-[20px] font-bold pt-4">
+      <p>+88 01817770022</p>
+      <p>+88 01817770033</p>
+      <p class="pt-4">info@galaxytechbd.com</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="max-w-[1200px] w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 py-12">
+    <div>
+      <img src="img/gelaxy.png" alt="logo" class="h-[50px]">
+      <p class="pt-4 text-[#454f5e] text-[16px] leading-[28px]">
+        Complete Solution of Science & Engineering Technologies with Import, Supply, Installation, Service &
+        Calibration.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d" target="_blank"
+          class="hover:text-[#3AA6B9]"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/galaxytechbd/" target="_blank" class="hover:text-[#3AA6B9]"><i
+            class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-[20px] font-semibold">Products</h1>
+      <ul class="pt-4 space-y-2 text-[#454f5e]">
+        <li><a href="land-survey.html" class="hover:text-[#3AA6B9]">Land Survey</a></li>
+        <li><a href="hydrographic-survey.html" class="hover:text-[#3AA6B9]">Hydrographic Survey</a></li>
+        <li><a href="Engineering-lab.html" class="hover:text-[#3AA6B9]">Engineering Lab</a></li>
+        <li><a href="educational-&-research.html" class="hover:text-[#3AA6B9]">Education & Research</a></li>
+        <li><a href="textile-testing.html" class="hover:text-[#3AA6B9]">Textile Testing</a></li>
+        <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a></li>
+        <li><a href="healthcare.html" class="hover:text-[#3AA6B9]">Healthcare</a></li>
+        <li><a href="projects.html" class="hover:text-[#3AA6B9]">Projects</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="text-[20px] font-semibold">Quick Links</h1>
+      <ul class="pt-4 space-y-2 text-[#454f5e]">
+        <li><a href="index.html" class="hover:text-[#3AA6B9]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#3AA6B9]">About Us</a></li>
+        <li><a href="services-&-cailbration.html" class="hover:text-[#3AA6B9]">Services & Calibration</a></li>
+        <li><a href="contact-us.html" class="hover:text-[#3AA6B9]">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1 class="text-[20px] font-semibold">Our Location</h1>
+      <h2 class="text-[18px] font-semibold pt-4">Corporate Office</h2>
+      <p class="text-[#454f5e]">64/1 (3rd floor – D1), Lake Circus,<br>Kalabagan, Dhaka -1205</p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bg-[#E9F8F9] flex flex-col md:flex-row justify-between items-center px-4 py-4 text-[14px]">
+    <p>© <php date('Y') ?></php> Galaxy Trade & Technologies</p>
+    <p>Developed By DzoneIT.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slickSlider').slick({
+        slidesToShow: 3,       // Show 5 images inside 650px
+        slidesToScroll: 1,     // Slide 1 image at a time
+        infinite: true,        // Loop slides
+        arrows: true,          // Enable arrows
+        dots: true,           // No dots
+        autoplay: true,       // No auto slide
+        prevArrow: '<button type="button" class="slick-prev">‹</button>',
+        nextArrow: '<button type="button" class="slick-next">›</button>',
+      });
+    });
+  </script>
+</body>
+
+
+</html>

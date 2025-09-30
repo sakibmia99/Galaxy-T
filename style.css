@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#header {
+    padding: 20px;
+    padding-top: 40px;
+    gap: 200px;
+
+
+}
+
+#header-1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    gap: 190px;
+    position: sticky;
+    top: 0px;
+    background-color: #E9F8F9;
+}

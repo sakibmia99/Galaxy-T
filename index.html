@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwindcss   -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./img/gelaxy.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--HEADER-->
+    <nav class="bg-[#E9F8F9] sticky top-0 z-50 font-[Montserrat]">
+        <div class="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-5">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/gelaxy.png" alt="logo" class="w-35 md:h-20">
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-semibold text-lg p-4 md:p-0 mt-4 md:space-x-6 md:flex-row md:mt-0 text-black">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 px-3 text-black rounded-sm md:bg-transparent  md:p-0 hover:text-[#63B9C8]"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:text-[#63B9C8] md:hover:bg-transparent md:border-0  md:p-0 ">About
+                            Us</a>
+                    </li>
+                    <li class="relative">
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0 md:w-auto cursor-pointer">Products
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-70 md:w-80">
+                            <ul class="py-2" aria-labelledby="dropdownLargeButton">
+                                <li><a href="land-survey.html" class="block px-4 py-2 hover:text-[#63B9C8] ">Land
+                                        Survey</a></li>
+                                <li><a href="hydrographic-survey.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Hydrographic
+                                        Survey</a></li>
+                                <li><a href="Engineering-lab.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Engineering
+                                        Lab</a></li>
+                                <li><a href="educational-&-research.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Educational & Research</a></li>
+                                <li><a href="textile-testing.html" class="block px-4 py-2 hover:text-[#63B9C8]">Textile
+                                        Testing</a></li>
+                                <li><a href="life-science-&-analytical.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Life
+                                        Science & Analytical</a></li>
+                                <li><a href="healthcare.html"
+                                        class="block px-4 py-2 hover:text-[#63B9C8]">Healthcare</a></li>
+                                <li><a href="projects.html" class="block px-4 py-2 hover:text-[#63B9C8]">Projects</a>
+                                </li>
+                                <li><a href="prodect-details.html" class="block px-4 py-2 hover:text-[#63B9C8]">Details
+                                        Page</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="services-&-cailbration.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Services
+                            & Calibration</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-[#63B9C8] md:p-0">Contact</a>
+                    </li>
+                    <li>
+                        <a class="mx-2 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
+                        <a target="_blank" class="mx-2 text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a class="text-[#63B9C8] mx-2" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider start -->
+    <div id="default-carousel" class="relative w-full z-10" data-carousel="slide">
+        <div class="relative h-49 overflow-hidden md:h-[480px] font-[Montserrat] font-semibold text-[35px]">
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="img/Land-Survey-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Title & Button -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                    <h2 class=" text-white mb-3">Land Survey</h2>
+                    <a href="land-survey.html"
+                        class="px-6 py-2 font-normal text-[13px] text-white bg-[#6EC1E4] rounded-lg hover:bg-[#69c5ec] pointer-events-auto">
+                        See More
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/Hydrograpic-Survey-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Title & Button -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                    <h2 class="text-white mb-3">Hydrograpic Survey</h2>
+                    <a href="hydrographic-survey.html"
+                        class="px-6 py-2 font-normal text-[13px] text-white bg-[#6EC1E4] rounded-lg hover:bg-[#69c5ec] pointer-events-auto">
+                        See More
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/Engineering-Lab-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Title & Button -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                    <h2 class="text-white mb-3">Engineering Lab</h2>
+                    <a href="engineering-lab.html"
+                        class="px-6 py-2  font-normal text-[13px] text-white bg-[#6EC1E4] rounded-lg hover:bg-[#69c5ec] pointer-events-auto">
+                        See More
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/Educational-Research-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Title & Button -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                    <h2 class="text-white mb-3">Educational Research</h2>
+                    <a href="educational-&-research.html"
+                        class="px-6 py-2 font-normal text-[13px] text-white bg-[#6EC1E4] rounded-lg hover:bg-[#69c5ec] pointer-events-auto">
+                        See More
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/Textile-Testing-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Title & Button -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                    <h2 class="text-white mb-3">Textile-Testing</h2>
+                    <a href="textile-testing.html"
+                        class="px-6 py-2 font-normal text-[13px] text-white bg-[#6EC1E4] rounded-lg hover:bg-[#69c5ec] pointer-events-auto">
+                        See More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    <!-- Slider end  -->
+
+    <div class="bg-[#E9F8F9] ">
+        <div class="text-center text-5xl pt-20 font-semibold leading-[62px]">
+            <h1>Key Business Areas
+            </h1>
+        </div>
+        <div>
+            <div class="justify-center pl-13 gap-10 pt-15  flex flex-col md:flex-row">
+                <a href="land-survey.html" class="transition duration-300 ease-in-out hover:scale-110 delay-150"><img
+                        src="img/finsl.png" alt=""></a>
+                <a href="hydrographic-survey.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/finsl-2.png" alt=""></a>
+                <a href="Engineering-lab.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/finsl-3.png" alt=""></a>
+                <a href="educational-&-research.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/finisel-4.png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <div class=" justify-center pl-13 gap-10 pt-6 pb-30 flex flex-col md:flex-row  ">
+                <a href="textile-testing.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/textile.png" alt=""></a>
+                <a href="life-science-&-analytical.html" class="transition duration-300 ease-in-out
+                    hover:scale-110 delay-150"><img src="img/textile-2.png" alt=""></a>
+                <a href="healthcare.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/textile-3.png" alt=""></a>
+                <a href="projects.html" class="transition duration-300 ease-in-out hover:scale-110
+                    delay-150"><img src="img/textile-4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[350px] mx-auto  md:w-[1200px]">
+        <h1 class="text-center text-[32px] leading-[42px] pt-30 font-semibold">Why we are different?
+        </h1>
+        <p class="text-center pt-6 text-[17px] leading-[32px] text-[#454f5e]">We differentiate ourselves by emphasising
+            on a business model that is
+            committed to
+            quality <br> and service with a
+            continual focus on the consumer.
+
+        </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center gap-4 py-20 mb-[60px] w-[1200px] mx-auto">
+        <div class="w-[350px] text-center py-7 hover:bg-[#6EC1E4] transition duration-300 delay-150">
+            <i class="fa-regular fa-heart text-[73px] "></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Better Client Service
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">Our clients are everything <br> to us and that is
+                what <br> drives us to get
+                better and <br>
+                provide the best client <br>
+                experience.
+            </p>
+        </div>
+        <div class="w-[350px] text-center py-6 hover:bg-[#6EC1E4] transition duration-300 delay-150">
+            <i class="fa-solid fa-users text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Experienced Team
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]"> Our team of highly skilled <br> engineers,
+                consultants <br> and experts work
+                closely <br>
+                with clients to provide the <br> right solutions.
+            </p>
+        </div>
+        <div class="w-[350px] text-center py-6 hover:bg-[#6EC1E4] transition duration-300 delay-150">
+            <i class="fa-solid fa-gear text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Total Solution
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">We don’t focus on selling, <br> we offer complete
+                <br> solutions that help our
+                <br> clients
+                grow & flourish.
+
+
+            </p>
+        </div>
+        <div class=" w-[350px] text-center py-6 hover:bg-[#6EC1E4] transition duration-300 delay-150">
+            <i class="fa-solid fa-circle-check text-[73px]"></i>
+            <h1 class="text-[23px] leading-[30px] font-semibold pt-5">Quality Standards
+
+            </h1>
+            <p class="pt-5 text-[18px] leading-[33px] text-[#454f5e]">We practice international <br> standard quality
+                control <br> system which can
+                help us <br>
+                to provide consistency in <br> providing international <br> standard <br> products & services.
+
+
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-[#54595F]">
+        <div class="text-center p-[70px] text-white">
+            <h1 class="text-[32px] leading-[42px] font-bold">Get In Touch.</h1>
+            <p class="text-[17px] leading-[32px] pt-5">We’d love to speak to you about your requirements and share any
+                product information
+                that <br> you may need. Talk to us any time.</p>
+            <p class="font-semibold text-[20px] leading-[37px] pt-10"> + 88 01817770022</p>
+            <p class="font-semibold text-[20px] leading-[37px] pt-1.5">+ 88 01817770033</p>
+            <p class="font-bold text-[20px] leading-[37px] pt-3">info@galaxytechbd.com</p>
+        </div>
+    </div>
+
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 py-10">
+        <div>
+            <img src="img/gelaxy.png" alt="logo" class="h-12">
+            <p class="mt-4 text-[16px] text-[#454f5e] leading-relaxed">
+                Complete Solution of Science & Engineering Technologies with Import,
+                Supply, Installation, Service & Calibration of the Equipment’s.
+            </p>
+            <div class="mt-4 flex space-x-4">
+                <a class="hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="hover:text-[#3AA6B9]" target="_blank" href="https://www.linkedin.com/company/galaxytechbd/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Products</h1>
+            <ul class="mt-4 space-y-2 text-[#454f5e]">
+                <li><a href="land-survey.html" class="hover:text-[#3AA6B9]">Land Survey</a></li>
+                <li><a href="hydrographic-survey.html" class="hover:text-[#3AA6B9]">Hydrographic Survey</a></li>
+                <li><a href="Engineering-lab.html" class="hover:text-[#3AA6B9]">Engineering Lab</a></li>
+                <li><a href="educational-&-research.html" class="hover:text-[#3AA6B9]">Education & Research</a></li>
+                <li><a href="textile-testing.html" class="hover:text-[#3AA6B9]">Textile Testing</a></li>
+                <li><a href="life-science-&-analytical.html" class="hover:text-[#3AA6B9]">Life Science & Analytical</a>
+                </li>
+                <li><a href="healthcare.html" class="hover:text-[#3AA6B9]">Healthcare</a></li>
+                <li><a href="projects.html" class="hover:text-[#3AA6B9]">Projects</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Quick Links</h1>
+            <ul class="mt-4 space-y-2 text-[#454f5e]">
+                <li><a href="index.html" class="hover:text-[#3AA6B9]">Home</a></li>
+                <li><a href="about.html" class="hover:text-[#3AA6B9]">About Us</a></li>
+                <li><a href="services-&-cailbration.html" class="hover:text-[#3AA6B9]">Services & Calibration</a></li>
+                <li><a href="contact-us.html" class="hover:text-[#3AA6B9]">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-lg font-semibold">Our Location</h1>
+            <h1 class="text-md font-semibold mt-4">Corporate Office</h1>
+            <p class="text-[#454f5e] leading-relaxed">64/1 (3rd floor – D1), Lake Circus,<br>Kalabagan, Dhaka -1205</p>
+        </div>
+    </div>
+
+    <div class="bg-[#E9F8F9]">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4 text-sm">
+            <h1>© 2025 Galaxy Trade & Technologies</h1>
+            <h1>Developed By DzoneIT.</h1>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

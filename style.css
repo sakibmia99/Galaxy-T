@@ -18,3 +18,24 @@
     top: 0px;
     background-color: #E9F8F9;
 }
+
+/* Override slick default arrows with Tailwind look */
+.slick-prev,
+.slick-next {
+    background: none !important;
+    border: none !important;
+    color: black !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    opacity: 1 !important;
+    /* always visible */
+    z-index: 10;
+}
+
+.slick-prev {
+    left: -30px !important;
+}
+
+.slick-next {
+    right: -30px !important;
+}
